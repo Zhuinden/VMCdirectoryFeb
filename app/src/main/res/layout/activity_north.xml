@@ -18,43 +18,51 @@
             android:orientation="vertical" >
 
             <Button
-                android:id="@+id/south1btn"
+                android:id="@+id/micubtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimaryDark"
-                android:text="1 South"
+                android:text="2 North (MICU)"
                 android:textSize="80sp" />
 
             <Button
-                android:id="@+id/south2btn"
+                android:id="@+id/miubtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
-                android:text="2 South"
+                android:text="2 North (MIU)"
                 android:textSize="80sp" />
 
             <Button
-                android:id="@+id/south3btn"
+                android:id="@+id/nsicubtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimaryDark"
-                android:text="3 South"
+                android:text="3 North (NSICU)"
                 android:textSize="80sp" />
 
             <Button
-                android:id="@+id/east2btn"
+                android:id="@+id/nsiubtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
-                android:text="2 East"
+                android:text="3 North (NSIU)"
                 android:textSize="80sp" />
 
             <Button
-                android:id="@+id/east3btn"
+                android:id="@+id/sicubtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimaryDark"
-                android:text="3 East"
+                android:text="4 North (SICU)"
+                android:textSize="80sp" />
+
+            <Button
+                android:id="@+id/siubtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="4 North (SIU)"
                 android:textSize="80sp" />
 
         </LinearLayout>

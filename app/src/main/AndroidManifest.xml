@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.vmcdirectory">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,8 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".south1"></activity>
-        <activity android:name=".EastSouth" />
+        <activity android:name=".Search"></activity>
+        <activity android:name=".west1" />
+        <activity android:name="Units.West" />
+        <activity android:name="Units.eastsouth.east3" />
+        <activity android:name="Units.north.sicu" />
+        <activity android:name="Units.north.nsicu" />
+        <activity android:name="Units.north.micu" />
+        <activity android:name="Units.north.siu" />
+        <activity android:name="Units.north.nsiu" />
+        <activity android:name="Units.north.miu" />
+        <activity android:name="Units.North" />
+        <activity android:name="Units.eastsouth.east2" />
+        <activity android:name="Units.eastsouth.south3" />
+        <activity android:name="Units.eastsouth.south2" />
+        <activity android:name="Units.eastsouth.south1" />
+        <activity android:name="Units.EastSouth" />
         <activity android:name=".departments" />
         <activity android:name=".units" />
         <activity android:name=".MainActivity">

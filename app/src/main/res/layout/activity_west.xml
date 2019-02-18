@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".units">
+    tools:context="Units.West">
 
 
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
@@ -20,68 +20,93 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/eastsouthbtn"
+                android:id="@+id/west1btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimaryDark"
-                android:text="East/South"
-                android:textSize="60sp" />
+                android:text="1 West (OB)"
+                android:textSize="80sp" />
 
             <Button
-                android:id="@+id/northbtn"
+                android:id="@+id/west1pdaybtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
-                android:text="North"
-                android:textSize="60sp" />
+                android:text="1 West (PDay)"
+                android:textSize="80sp" />
 
             <Button
-                android:id="@+id/westbtn"
+                android:id="@+id/west1nicubtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimaryDark"
-                android:text="West/L&amp;D"
-                android:textSize="60sp" />
+                android:text="1 West (NICU)"
+                android:textSize="80sp" />
 
             <Button
-                android:id="@+id/cvccbtn"
+                android:id="@+id/west2pedsbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
-                android:text="CV/CC"
-                android:textSize="60sp" />
+                android:text="2 West (Peds)"
+                android:textSize="80sp" />
 
             <Button
-                android:id="@+id/edbtn"
+                android:id="@+id/west2picubtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimaryDark"
-                android:text="ED"
-                android:textSize="60sp" />
+                android:text="2 West (PICU)"
+                android:textSize="80sp" />
 
             <Button
-                android:id="@+id/orbtn"
+                android:id="@+id/west2scnbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
-                android:text="OR"
-                android:textSize="60sp" />
+                android:text="2 West (SCN)"
+                android:textSize="80sp" />
 
             <Button
-                android:id="@+id/rehabpsychbtn"
+                android:id="@+id/west2kisubtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimaryDark"
-                android:text="Rehab/Psych"
-                android:textSize="60sp" />
+                android:text="2 West (KISU)"
+                android:textSize="80sp" />
 
             <Button
-                android:id="@+id/miscbtn"
+                android:id="@+id/west3btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
-                android:text="Misc Units"
-                android:textSize="60sp" />
+                android:text="3 West (GSIU)"
+                android:textSize="80sp" />
+
+            <Button
+                android:id="@+id/ldbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="L &amp; D"
+                android:textSize="80sp" />
+
+            <Button
+                android:id="@+id/ldtriagebtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="L &amp; D Triage"
+                android:textSize="80sp" />
+
+            <Button
+                android:id="@+id/ldpacubtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="L &amp; D PACU"
+                android:textSize="80sp" />
+
 
         </LinearLayout>
 

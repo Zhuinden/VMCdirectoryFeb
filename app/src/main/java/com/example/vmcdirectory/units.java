@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import Units.EastSouth;
+import Units.North;
+import Units.West;
+
 public class units extends AppCompatActivity {
 
     @Override
@@ -21,7 +25,27 @@ public class units extends AppCompatActivity {
 
                 startActivity(startIntent);
 
+            }});
+
+        unitsbtn = (Button) findViewById(R.id.northbtn);
+        unitsbtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                 Intent startIntent = new Intent(getApplicationContext(), North.class);
+
+                 startActivity(startIntent);
+
+             }});
+
+        unitsbtn = (Button) findViewById(R.id.westbtn);
+        unitsbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), West.class);
+
+                startActivity(startIntent);
+
+            }});
+
             }
-        });
-    }
-}
+        }

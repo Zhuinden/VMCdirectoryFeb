@@ -1,4 +1,4 @@
-package com.example.vmcdirectory;
+package Units.eastsouth;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,11 +8,13 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
+import com.example.vmcdirectory.R;
+import com.example.vmcdirectory.RecyclerViewAdapter;
 
 
-public class south1 extends AppCompatActivity {
+public class south2 extends AppCompatActivity {
 
-    private static final String TAG = "south1";
+    private static final String TAG = "south2";
 
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
@@ -21,7 +23,7 @@ public class south1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_south1);
+        setContentView(R.layout.activity_south2);
         Log.d(TAG, "onCreate: started.");
 
         initImageBitmaps();
@@ -32,16 +34,16 @@ public class south1 extends AppCompatActivity {
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
 
         mImageUrls.add("https://png2.kisspng.com/sh/45e6067b5fd542f36f0e441e041db9b4/L0KzQYm3VMA1N6h8fZH0aYP2gLBuTfNwdaF6jNd7LXTog7y0kBVkepZ5eeRELXBpdrrqhb1kdJp1RdN7dD33db3sjfFzc5Z5gdDwLUXkc4a4VsRmPpc8e6Y9LkG0QYq8VMM1OWY3SqoBNUe3QoW8VscveJ9s/kisspng-computer-desk-secretary-office-clip-art-telemarketing-5ac5164e6f7c44.1119543415228657424567.png");
-        mNames.add("Secretary  7-1505");
+        mNames.add("Secretary  7-8240");
 
         mImageUrls.add("https://png2.kisspng.com/sh/d14021817f1bfda25d0a85cf549dbc6e/L0KzQYm3U8I6N5Z6fZH0aYP2gLBuTf52eqRuhtk2c4Tyc7y0kPhwfJDsitN5aImweLF6kPl1aZ0ygNdqbITrPbTokvUudqZ3i9c2NXHlc7eBUcM4bmdoTKs3OEm6QImBU8MyPWM3S6U8N0G4RYO4Wb5xdpg=/kisspng-nursing-stock-photography-hospital-health-care-nurse-5abcf8137f6c49.8970883315223337155219.png");
-        mNames.add("Charge Nurse  7-3229");
+        mNames.add("Charge Nurse  7-0262");
 
         mImageUrls.add("https://png2.kisspng.com/sh/5151e53bd7356804ac9ebc741ea0c2aa/L0KzQYm3UsAyN6ppfZH0aYP2gLBuTfp2dpwyftNDLYDkgLb5TgBpd6V0e9H5aXX1Pb7ogBhqdpYyftNDLX3kc7nwjvUuPZI8S9MEMHa0SYaCgccvPWc6SaQDOUW0RYKAVcI6O2YASaI8OD7zfri=/kisspng-junk-fax-paper-photocopier-machine-fax-machine-5a73a90f1959a7.5651289515175293591038.png");
         mNames.add("Fax  7-xxxx");
 
         mImageUrls.add("https://png2.kisspng.com/sh/18113a15080ea07be1da30012e3f9543/L0KzQYm3U8I5N6J5iZH0aYP2gLBuTfJ2e5pzfeV8cHX1g7F1TgN1d5RwReJxb4Tyd8PokPh6NZN6i9t3ZYP2PbBslQdwepxuRdRAc3nxdcT6TgBmd6FxfZ8AYXLlc4OBVvU4PJJqSZCDNkG0Q4e4U8E2OmM3TaY9N0C8RIi7TwBvbz==/kisspng-businessperson-stock-photography-business-networki-business-people-5abbc286e74ae1.8611361315222544709474.png");
-        mNames.add("Case Manager  7-2846/6-3897");
+        mNames.add("Case Manager  7-9500/7-4069");
 
         mImageUrls.add("https://png2.kisspng.com/sh/4ab0ad1375e92233e54a48a68fd169f9/L0KzQYm3U8MyN6ZwiZH0aYP2gLBuTf9xcZDufJ9Ac3WwdLr6jCJlbaMyhddtaXPkfH7qgf5vaZNui594cHnyebW0hgBqbJZyReJybHz2PYbogvYza2I4SqMCYXWzPoW4U8AxOGc7Sac7MkS6SIGCWcE0P2MziNDw/kisspng-opioid-use-disorder-medical-cannabis-opioid-epidem-pills-5abf2c13217ae0.4130006615224780991372.png");
         mNames.add("Pharmacist  7-7900");

@@ -8,4 +8,7 @@
     <string name="misc">Misc</string>
     <string name="clinics">Clinics</string>
     <string name="look_at_that_intent_and_activity_bruhhhh">LOOK AT THAT INTENT AND ACTIVITY BRUHHHH</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
