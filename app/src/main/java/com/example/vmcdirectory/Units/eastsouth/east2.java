@@ -1,4 +1,4 @@
-package Units.north;
+package com.example.vmcdirectory.Units.eastsouth;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,15 +8,13 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
-import com.bumptech.glide.annotation.GlideModule;
-import com.bumptech.glide.module.AppGlideModule;
 import com.example.vmcdirectory.R;
 import com.example.vmcdirectory.RecyclerViewAdapter;
 
 
-public class micu extends AppCompatActivity {
+public class east2 extends AppCompatActivity {
 
-    private static final String TAG = "micu";
+    private static final String TAG = "east2";
 
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
@@ -25,7 +23,7 @@ public class micu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_micu);
+        setContentView(R.layout.activity_east2);
         Log.d(TAG, "onCreate: started.");
 
         initImageBitmaps();
@@ -45,13 +43,13 @@ public class micu extends AppCompatActivity {
         mNames.add("Fax  7-xxxx");
 
         mImageUrls.add("https://png2.kisspng.com/sh/18113a15080ea07be1da30012e3f9543/L0KzQYm3U8I5N6J5iZH0aYP2gLBuTfJ2e5pzfeV8cHX1g7F1TgN1d5RwReJxb4Tyd8PokPh6NZN6i9t3ZYP2PbBslQdwepxuRdRAc3nxdcT6TgBmd6FxfZ8AYXLlc4OBVvU4PJJqSZCDNkG0Q4e4U8E2OmM3TaY9N0C8RIi7TwBvbz==/kisspng-businessperson-stock-photography-business-networki-business-people-5abbc286e74ae1.8611361315222544709474.png");
-        mNames.add("Case Manager  7-xxxx");
+        mNames.add("Case Manager  7-xxxx/7-xxxx");
 
         mImageUrls.add("https://png2.kisspng.com/sh/4ab0ad1375e92233e54a48a68fd169f9/L0KzQYm3U8MyN6ZwiZH0aYP2gLBuTf9xcZDufJ9Ac3WwdLr6jCJlbaMyhddtaXPkfH7qgf5vaZNui594cHnyebW0hgBqbJZyReJybHz2PYbogvYza2I4SqMCYXWzPoW4U8AxOGc7Sac7MkS6SIGCWcE0P2MziNDw/kisspng-opioid-use-disorder-medical-cannabis-opioid-epidem-pills-5abf2c13217ae0.4130006615224780991372.png");
         mNames.add("Pharmacist  7-xxxx");
 
         mImageUrls.add("https://png2.kisspng.com/sh/dd5296b9266dfd71188de3812e90be1d/L0KzQYm3UsAzN6p6iZH0aYP2gLBuTfhidZN6itlucj32hMPshgQubpD0fJ98ZXHpf7FrTfZie6UyftH4ZD3ndb3wgBlwfaQyftH4ZD24cYi8UMg0a5Rqedg9MT61Roi9V8Q0PGI6SakBMUm1RoGBVMY3NqFzf3==/kisspng-hamburger-street-food-seafood-fast-food-delicious-food-5a75083cceaf41.2676743415176192608466.png");
-        mNames.add("Nutritionist  7-xxxx");
+        mNames.add("Nutritionist  7-xxxx/pager.xxxx");
 
         mImageUrls.add("https://png2.kisspng.com/sh/c32db0011e6d68db0af3d8707969b6cf/L0KzQYm3VsIzN5tAgZH0aYP2gLBuTfFkfaVqRdVqcnWwfsb5kBUueKNmeAZydHnyfrb5Tf52eqRuhtk2Y3H1dX7vhfFtfJkygtHAcn7kfH72hr11cJYyed9ucnnmcbA0ggN0d5RueeZyb36wf7e0jwVze5YyiORqY4SwRbO5hMQyamFpSdM6NUSxRoG6VMU0Pmo2TaQENkm1RYq5WMU5P191htk=/kisspng-acute-care-nurse-practitioner-nursing-care-health-journal-of-the-american-association-of-nurse-pract-5b2d41b0d1a154.6034536915296925928587.png");
         mNames.add("RN Pods  7-xxxx");

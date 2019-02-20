@@ -1,4 +1,4 @@
-package Units;
+package com.example.vmcdirectory.Units;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,11 +8,11 @@ import android.widget.Button;
 
 import com.example.vmcdirectory.R;
 
-import Units.eastsouth.east2;
-import Units.eastsouth.east3;
-import Units.eastsouth.south1;
-import Units.eastsouth.south2;
-import Units.eastsouth.south3;
+import com.example.vmcdirectory.Units.eastsouth.east2;
+import com.example.vmcdirectory.Units.eastsouth.east3;
+import com.example.vmcdirectory.Units.eastsouth.south1;
+import com.example.vmcdirectory.Units.eastsouth.south2;
+import com.example.vmcdirectory.Units.eastsouth.south3;
 
 public class EastSouth extends AppCompatActivity {
 

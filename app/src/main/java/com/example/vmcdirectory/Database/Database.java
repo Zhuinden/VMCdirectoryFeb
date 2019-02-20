@@ -53,6 +53,7 @@ public class Database extends SQLiteAssetHelper {
                 result.add(patients);
             } while (cursor.moveToNext());
         }
+        cursor.close();
         return result;
     }
 
@@ -72,6 +73,7 @@ public class Database extends SQLiteAssetHelper {
                 result.add(cursor.getString(cursor.getColumnIndex("patient")));
             } while (cursor.moveToNext());
         }
+        cursor.close();
         return result;
 
     }
@@ -110,8 +112,7 @@ public class Database extends SQLiteAssetHelper {
                 result.add(patients);
             } while (cursor.moveToNext());
         }
+        cursor.close();
         return result;
     }
-
-
 }

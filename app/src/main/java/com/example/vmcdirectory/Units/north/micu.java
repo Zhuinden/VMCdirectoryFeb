@@ -1,4 +1,4 @@
-package Units.north;
+package com.example.vmcdirectory.Units.north;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,15 +8,13 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
-import com.bumptech.glide.annotation.GlideModule;
-import com.bumptech.glide.module.AppGlideModule;
 import com.example.vmcdirectory.R;
 import com.example.vmcdirectory.RecyclerViewAdapter;
 
 
-public class sicu extends AppCompatActivity {
+public class micu extends AppCompatActivity {
 
-    private static final String TAG = "sicu";
+    private static final String TAG = "micu";
 
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
@@ -25,7 +23,7 @@ public class sicu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sicu);
+        setContentView(R.layout.activity_micu);
         Log.d(TAG, "onCreate: started.");
 
         initImageBitmaps();

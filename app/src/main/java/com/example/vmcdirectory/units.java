@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import Units.EastSouth;
-import Units.North;
-import Units.West;
+import com.example.vmcdirectory.Units.EastSouth;
+import com.example.vmcdirectory.Units.North;
+import com.example.vmcdirectory.Units.West;
 
 public class units extends AppCompatActivity {
 

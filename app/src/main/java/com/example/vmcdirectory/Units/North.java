@@ -1,4 +1,4 @@
-package Units;
+package com.example.vmcdirectory.Units;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,12 +7,12 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.vmcdirectory.R;
-import Units.north.micu;
-import Units.north.miu;
-import Units.north.nsicu;
-import Units.north.nsiu;
-import Units.north.sicu;
-import Units.north.siu;
+import com.example.vmcdirectory.Units.north.micu;
+import com.example.vmcdirectory.Units.north.miu;
+import com.example.vmcdirectory.Units.north.nsicu;
+import com.example.vmcdirectory.Units.north.nsiu;
+import com.example.vmcdirectory.Units.north.sicu;
+import com.example.vmcdirectory.Units.north.siu;
 
 public class North extends AppCompatActivity {
 

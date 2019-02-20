@@ -1,4 +1,4 @@
-package Units;
+package com.example.vmcdirectory.Units;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,8 +8,7 @@ import android.widget.Button;
 
 import com.example.vmcdirectory.R;
 
-import Units.eastsouth.south1;
-import Units.west.west1;
+import com.example.vmcdirectory.Units.west.west1;
 
 public class West extends AppCompatActivity {
 

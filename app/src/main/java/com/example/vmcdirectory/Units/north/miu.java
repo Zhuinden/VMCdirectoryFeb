@@ -1,4 +1,4 @@
-package Units.north;
+package com.example.vmcdirectory.Units.north;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,15 +8,13 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
-import com.bumptech.glide.annotation.GlideModule;
-import com.bumptech.glide.module.AppGlideModule;
 import com.example.vmcdirectory.R;
 import com.example.vmcdirectory.RecyclerViewAdapter;
 
 
-public class nsiu extends AppCompatActivity {
+public class miu extends AppCompatActivity {
 
-    private static final String TAG = "nsiu";
+    private static final String TAG = "miu";
 
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
@@ -25,7 +23,7 @@ public class nsiu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nsiu);
+        setContentView(R.layout.activity_miu);
         Log.d(TAG, "onCreate: started.");
 
         initImageBitmaps();

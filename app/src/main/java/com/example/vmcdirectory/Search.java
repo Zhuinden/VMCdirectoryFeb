@@ -20,7 +20,7 @@ public class Search extends AppCompatActivity {
 
     RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
-    SearchAdapter adapter;
+    final SearchAdapter adapter =  new SearchAdapter();
 
     MaterialSearchBar materialSearchBar;
     List<String> suggestList = new ArrayList<>();
@@ -37,6 +37,7 @@ public class Search extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
+        recyclerView.setAdapter(adapter);
 
         materialSearchBar = (MaterialSearchBar)findViewById(R.id.search_bar);
 
@@ -50,31 +51,22 @@ public class Search extends AppCompatActivity {
         materialSearchBar.addTextChangeListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-                List<String> suggest = new ArrayList<>();
-                for (String search:suggestList)
-                {
-                    if(search.toLowerCase().contains(materialSearchBar.getText().toLowerCase()))
-                        suggest.add(search);
-                }
-                materialSearchBar.setLastSuggestions(suggest);
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-
+                if(s.toString().isEmpty()) {
+                    adapter.updateData(database.getPatients());
+                }
             }
         });
         materialSearchBar.setOnSearchActionListener(new MaterialSearchBar.OnSearchActionListener() {
             @Override
             public void onSearchStateChanged(boolean enabled) {
-                if (!enabled)
-                    recyclerView.setAdapter(adapter);
             }
 
             @Override
@@ -90,17 +82,15 @@ public class Search extends AppCompatActivity {
 
 
         //Init Adapter default set all result
-        adapter = new SearchAdapter(this,database.getPatients());
-        recyclerView.setAdapter(adapter);
-
+        adapter.updateData(database.getPatients());
     }
 
     private void startSearch(String text) {
-
-        adapter = new SearchAdapter(this,database.getpatientbyroom(text));
-        recyclerView.setAdapter(adapter);
-
-
+        if(text == null || "".equals(text)) {
+            adapter.updateData(database.getPatients());
+        } else {
+            adapter.updateData(database.getpatientbyroom(text));
+        }
     }
 
     private void loadSuggestList() {
